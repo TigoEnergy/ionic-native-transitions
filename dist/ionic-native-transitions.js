@@ -330,7 +330,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                return;
 	            }
 	
-	            if ($state.is(state, stateParams) && !stateOptions.reload) {
+	            if ($state.current.name === state) {
 	                $log.debug('[native transition] same state transition are not possible');
 	                return;
 	            }
